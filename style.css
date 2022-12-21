@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(206, 222, 234);
+}
+
+nav{
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(7, 7, 35);
+    height: 55px;
+    color: azure;
+    align-items: center;
+}
+
+nav ul li{
+    padding:0 12px
+}
+
+.container{
+    min-height: 75vh;
+    background-color: rgb(7, 7, 35);
+    color: azure;
+    font-family: 'PT Serif', serif;
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-image: url("./Pics/Ajax_DJ.jpg");
+    
+}
+
+.songItem{
+ height: 37px;
+ display: flex;
+ background-color: aliceblue;
+ margin-left: 10px;
+ color: black;
+ align-items: center;
+ justify-content: space-around;
+ width: 120%;
+ border-radius: 10px;
+ 
+}
+
+
+.songItem img{
+    height: 37px;
+    margin-left: -14px;
+    border-radius: 10px;
+}
+
+.time{
+    padding: 13px;
+  
+}
+.time i{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 34px;
+}
+
+
+.brand img{
+    height: 42px;  
+    padding:0 9px
+}
+
+.brand{
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.container{
+    min-height: 75vh;
+}
+
+.bottom{
+    position: sticky;
+    height: 75px;
+    background-color: rgb(7, 7, 35);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color:aliceblue;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.songInfo{
+    position:absolute;
+    left: 10vw;
+    font-family: 'PT Serif', serif;
+}
+
+.songInfo img{
+  opacity: 0;
+  transition: opacity .5s ease-in;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}

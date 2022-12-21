@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Heading or NavBar Portion -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="./Pics/logo.png" alt="image">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <!-- Banner Portion Or Body Portion -->
+    <div class="container">
+        <div class="songList">
+            <h1> Best Of KK</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img  alt="1">
+                    <span class="songName">Khuda Jaane </span>
+                    <span class="songListPlay"><span class="time">05:33 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div><br>
+                <div class="songItem">
+                    <img  alt="2">
+                    <span class="songName">Abhi Abhi </span>
+                    <span class="songListPlay"><span class="time">05:44 <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span></span>
+                </div><br>
+                <div class="songItem">
+                    <img  alt="3">
+                    <span class="songName">Ajab Si </span>
+                    <span class="songListPlay"><span class="time">04:03 <i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div><br>
+                <div class="songItem">
+                    <img  alt="4">
+                    <span class="songName">Tu Hi Meri Shab </span>
+                    <span class="songListPlay"><span class="time">06:29 <i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div><br>
+                <div class="songItem">
+                    <img  alt="5">
+                    <span class="songName">Tujhe Sochta</span>
+                    <span class="songListPlay"><span class="time">05:14 <i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div><br>
+                <div class="songItem">
+                    <img  alt="1">
+                    <span class="songName">Labon Ko </span>
+                    <span class="songListPlay"><span class="time">05:43 <i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div><br>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-2x fa-step-backward" id ="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="play"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="./Pics/playing.gif" alt="images" width="42px" id="gif"> <span id="masterSongName">Khuda Jaane</span>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/c63e380d85.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

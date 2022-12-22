@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(206, 222, 234);
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
 
 nav{
@@ -21,11 +21,12 @@ nav ul{
     background-color: rgb(7, 7, 35);
     height: 55px;
     color: azure;
-    align-items: center;
+    align-items: center; 
 }
 
 nav ul li{
-    padding:0 12px
+    padding:0 12px;
+    cursor: pointer; 
 }
 
 .container{
@@ -57,7 +58,7 @@ nav ul li{
 
 .songItem img{
     height: 37px;
-    margin-left: -14px;
+    margin-left: -15px;
     border-radius: 10px;
 }
 
@@ -75,6 +76,11 @@ nav ul li{
 }
 
 
+.songList{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
 .brand img{
     height: 42px;  
     padding:0 9px
@@ -87,13 +93,16 @@ nav ul li{
     align-items: center;
 }
 
+
+
+
 .container{
     min-height: 75vh;
 }
 
 .bottom{
     position: sticky;
-    height: 75px;
+    height: 74px;
     background-color: rgb(7, 7, 35);
     bottom: 0;
     display: flex;
@@ -104,7 +113,7 @@ nav ul li{
 }
 
 .icons{
-    margin-top: 10px;
+    margin-top: 4px;
     cursor: pointer;
 }
 
@@ -112,11 +121,16 @@ nav ul li{
     position:absolute;
     left: 10vw;
     font-family: 'PT Serif', serif;
+    margin-top: 12px;
+    font-weight: bolder;
+    margin-left: 10px;
 }
 
 .songInfo img{
   opacity: 0;
   transition: opacity .5s ease-in;
+  height: 25px;
+  width: 140px;
 }
 
 #myProgressBar{

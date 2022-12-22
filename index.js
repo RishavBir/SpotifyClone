@@ -6,15 +6,15 @@ let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
 let masterSongName = document.getElementById("masterSongName");
 let songItems = Array.from(document.getElementsByClassName("songItem"))
+
 let songs = [
     { songName: "Khuda Jaane", filePath: "./Songs/0.mp3", coverPath: "./Pics/download.jfif" },
-    { songName: "Abhi Abhi", filePath: "./Songs/1.mp3", coverPath: "./Pics/abhi.jfif" },
+    { songName: "Abhi Abhi", filePath: "./Songs/1.mp3", coverPath: "./Pics/abhi.jpg" },
     { songName: "Ajab Si", filePath: "./Songs/2.mp3", coverPath: "./Pics/ajab.jfif" },
     { songName: "Tu Hi Meri Shab", filePath: "./Songs/3.mp3", coverPath: "./Pics/tuhimeri.jfif" },
     { songName: "Tujhe Sochta", filePath: "./Songs/4.mp3", coverPath: "./Pics/tujhe.jfif" },
     { songName: "Labon Ko", filePath: "./Songs/5.mp3", coverPath: "./Pics/labon.jfif" },
 ]
-
 songItems.forEach((element,i)=>{
     element.getElementsByTagName("img")[0].src = songs[i].coverPath
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName
@@ -85,6 +85,7 @@ document.getElementById("previous").addEventListener("click",()=>{
     plays.classList.remove("fa-play-circle");
     plays.classList.add("fa-pause-circle");
     masterSongName.innerText = songs[songIndex].songName
+    gif.style.opacity = 1
 })
 
 
@@ -101,5 +102,6 @@ document.getElementById("next").addEventListener("click",()=>{
     plays.classList.remove("fa-play-circle");
     plays.classList.add("fa-pause-circle");
     masterSongName.innerText = songs[songIndex].songName
+    gif.style.opacity = 1
 })
 
